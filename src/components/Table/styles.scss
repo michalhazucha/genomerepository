@@ -1,40 +1,47 @@
-.table{
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  background-color:#ffff;
-  width:100%;
-  border-spacing:0;
-  border-radius:0;
+@import '../../config/variables.scss';
+
+.table {
+  box-shadow: $box-shadow;
+  background-color: $white;
+  width: 100%;
+  border-spacing: 0;
+  border-radius: 0;
 }
 
-.table-head{
-  background:#0776dd;
-  padding-block:1.3rem;
-  color: #ffff;;
-  box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  &-col{
-    padding:1rem;
-    border-bottom: 1px solid grey;
+.table-head {
+  background: $primary-color;
+  padding-block: 1.3rem;
+  color: $white;
+  box-shadow: $box-shadow;
+
+  &-col {
+    padding: 1rem;
+    border-bottom: 1px solid $light-gray;
   }
 }
-.table-row{
-  border-bottom: 2px solid grey;
-  &:hover{
-    background:#58acfa;;
-    td{
-      color:white
+
+.table-row {
+  border-bottom: 2px solid $light-gray;
+
+  &:hover {
+    background: $secondary-color;
+
+    td {
+      color: $white;
     }
   }
-  &>.table-col:first-of-type{
+
+  & > .table-col:first-of-type {
     font-weight: 700;
   }
 }
 
-.table-col{
-padding-block: 1rem;
-font-weight: 400;
+.table-col {
+  padding-block: 1rem;
+  font-weight: 400;
 }
 
-.table-text-fallback{
-  font-weight:700;
-  border:none;
+.table-text-fallback {
+  font-weight: 700;
+  border: none;
 }
