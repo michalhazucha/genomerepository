@@ -1,2 +1,1 @@
-# genomerepository
-FEInterviewTask
+Frontend interview task
